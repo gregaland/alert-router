@@ -1,0 +1,15 @@
+{
+ "alert": "dbfail",
+ "schedule": [
+  {
+    "id": "all_day",
+    "router_id": "slack-alerts"
+  },
+  {
+    "id": "after_hours",
+    "start": "0 17 * * *",
+    "end": "0 6 * * *",
+    "router_id": "gmail",
+    "email_addrs": ["3035551234@tmomail.net", "john.doe@gmail.com"] 
+  }]
+}

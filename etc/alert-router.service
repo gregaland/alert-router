@@ -1,0 +1,18 @@
+[Unit]
+Description=Alert Router
+Wants=network-online.target
+After=network-online.target
+  
+[Service]
+User=conops
+EnvironmentFile=/etc/sysconfig/alert-router
+ExecStart=/opt/alert-router/bin/alert-router -c ${CONFIG_FILE}
+KillMode=process
+Restart=on-failure
+RestartSec=5s
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=alert-router
+  
+[Install]
+WantedBy=multi-user.target

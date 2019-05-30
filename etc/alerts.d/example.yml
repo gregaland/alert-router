@@ -1,0 +1,6 @@
+alert: example
+schedule:
+  - id: all_day
+    router_id: gmail
+    email_addrs:
+      - 9999999999@tmomail.net

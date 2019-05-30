@@ -1,0 +1,16 @@
+src/github.com/google
+src/github.com/robfig
+src/github.com/stretchr
+src/github.com/gorilla
+src/github.com/pkg
+sirupsen
+gotest.tools
+gopkg.in
+golang.org
+pkg
+bin/alert-router
+rpm
+.idea
+*.iml
+.DS_Store
+etc/alert-router.yml
