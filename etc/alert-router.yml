@@ -1,0 +1,15 @@
+---
+listen: :8000
+alerts_path: etc/alerts.d
+log_level: info
+log_format: json
+routers:
+  - id: gmail
+    type: email
+    enabled: true
+    smtphost: smtp.gmail.com
+    smtpport: 587
+  - id: slack-alerts
+    type: webhook
+    url: https://hooks.slack.com/services/...
+    enabled: true

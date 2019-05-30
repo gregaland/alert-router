@@ -13,4 +13,3 @@ rpm
 .idea
 *.iml
 .DS_Store
-etc/alert-router.yml
